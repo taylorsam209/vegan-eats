@@ -6,14 +6,14 @@ import { Link } from 'react-router-dom';
 export default function Listing() {
 
   const listings = [
-    { name: 'Tay Vegan Restuarant', image_url: 'null', price: 59, rating: 4 },
-    { name: 'Tay Vegan Restuarant', image_url: 'null', price: 59, rating: 4 },
-    { name: 'Tay Vegan Restuarant', image_url: 'null', price: 59, rating: 4 },
-    { name: 'Tay Vegan Restuarant', image_url: 'null', price: 59, rating: 4 },
-    { name: 'Tay Vegan Restuarant', image_url: 'null', price: 59, rating: 4 },
-    { name: 'Tay Vegan Restuarant', image_url: 'null', price: 59, rating: 4 },
-    { name: 'Tay Vegan Restuarant', image_url: 'null', price: 59, rating: 4 },
-    { name: 'Tay Vegan Restuarant', image_url: 'null', price: 59, rating: 4 }
+    { id: '12', name: 'Tay Vegan Restuarant', image_url: 'null', price: 59, rating: 4 },
+    { id: '12', name: 'Tay Vegan Restuarant', image_url: 'null', price: 59, rating: 4 },
+    { id: '12', name: 'Tay Vegan Restuarant', image_url: 'null', price: 59, rating: 4 },
+    { id: '12', name: 'Tay Vegan Restuarant', image_url: 'null', price: 59, rating: 4 },
+    { id: '12', name: 'Tay Vegan Restuarant', image_url: 'null', price: 59, rating: 4 },
+    { id: '12', name: 'Tay Vegan Restuarant', image_url: 'null', price: 59, rating: 4 },
+    { id: '12', name: 'Tay Vegan Restuarant', image_url: 'null', price: 59, rating: 4 },
+    { id: '12', name: 'Tay Vegan Restuarant', image_url: 'null', price: 59, rating: 4 }
   ]
 
   // handleGetRestaurant(e) {

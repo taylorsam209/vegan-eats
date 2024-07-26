@@ -9,25 +9,25 @@ import freshveggie from "../../assets/fresh-veggies.jpeg";
 import mexicana from "../../assets/mexicana.png";
 import miso from "../../assets/miso.jpg";
 import pho from "../../assets/pho.jpg";
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { TypeAnimation } from 'react-type-animation'
-import axios from 'axios';
+// import axios from 'axios';
 
 export default function Landing() {
   const [input, setInput] = useState('')
-  const [data, setData] = useState([{}])
+  // const [data, setData] = useState([{}])
   const photos = [freshveggie, mexicana, miso, pho]
 
-  useEffect(() => {
-    async function fetchData() {
-      const response = await axios.get('/api')
-      // const users = await response.json()
-      console.log(response.data)
+  // useEffect(() => {
+  //   async function fetchData() {
+  //     const response = await axios.get('/api')
+  //     // const users = await response.json()
+  //     console.log(response.data)
 
-      //  setData(response)
-    }
-    fetchData()
-  }, [])
+  //     setData(response)
+  //   }
+  //   fetchData()
+  // }, [])
 
   const renderTypeWriter = () => {
     return (
@@ -63,8 +63,6 @@ export default function Landing() {
   // const handleSubmit = () => {
   //   console.log('submitted')
   // }
-
-  console.log('data', data)
 
   return (
     <div className="Landing">
