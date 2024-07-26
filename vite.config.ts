@@ -6,4 +6,13 @@ export default defineConfig({
   plugins: [react({
     include: "**/*.tsx"
   })],
+  server: {
+    proxy: {
+      "/api": {
+        target: 'http://localhost:5000',
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, "/api")
+      }
+    }
+  }
 })
