@@ -1,49 +1,35 @@
 @import "../../assets/variables.scss";
 
-.Landing {
-    width: 100vh;
-    height: 100vh;
-    // border: 10px solid green;
+.home {
+    margin-top:60px;
+    border: 10px solid green;
 }
-
-// .Typist .Cursor {
-//     // display: inline-block;
-//     &--blinking {
-//       opacity: 1;
-//       animation: blink 1s linear infinite;
-//       @keyframes blink {
-//         0% { opacity:1; }
-//         50% { opacity:0; }
-//         100% { opacity:1; }
-//       }
-//     }
-//   }
 
 .video-container { 
   border: 1px solid blue;
-    width: 100vh;
-    padding-top:60px;
+    width: 100%;
+    height: 90%;
     position: relative;
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
     -webkit-animation-duration: 1s;
     animation-duration: 2s;
-    animation-delay: 1s;
+    animation-delay: 0.25s;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both; 
     .video-overlay {
+        border: 3px solid red;
         width: 100%;
         height: 100%;
-        padding-top:60px;
         position: absolute;
         left: 0px;
         top: 0px;
-        z-index: 1;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         .search-container{
+            // border: 3px solid orange;
             width: 70%;
             display: flex;
             flex-direction: row;
@@ -52,9 +38,12 @@
             justify-content: center;
             animation-name: slideInDown;
             animation-duration: 1s;
-            animation-delay: 2s;
+            animation-delay: 1s;
             animation-fill-mode: both;
             .input-bar {
+                border: none;
+                text-decoration: none;
+                border-radius: 50px;
                 height: 30px;
                 width: 400px;
                 font-size: 1.5em;
@@ -62,6 +51,7 @@
                 font-family: $font-family-elegant;
                 color: black;
                 opacity: 0.70;
+                margin-right: 6px;
             }
             .submit-btn {
                 height: 30px;
@@ -70,9 +60,7 @@
                 text-decoration: none;
                 color: white;
                 border: 3px solid white;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                border-radius: 6px;
                 font-family: $font-family-bold;
                 font-weight: bold;
             }
@@ -81,27 +69,26 @@
             }
         }
         .description-container{
-            margin-top:50px;;
+            margin-top:50px;
             font-family: $font-family-bold;
-            font-size: 60px;
+            font-size: 50px;
             font-weight: bold;
             color: rgb(255, 255, 255);
-            width: 60%;
-            height: 25%;
             opacity: 0.80;
             animation: fadein 5s;
-            text-align: center;
         }
     } 
     video {
         width: 100%;
         height: 100%;
-        z-index: -1;
+        // z-index: -1;
     }
 }
 
 .bottom-container{
-    margin-top: -4px;
+    margin-top: -6px;
+    border: 3px solid purple;
+    background-color: yellow;
     width: 100%;
     height: auto;
     display: flex;

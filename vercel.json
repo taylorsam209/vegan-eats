@@ -1,3 +1,4 @@
 {
+  "_comment": "fixes react routes not working in deployment to vercel",
   "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }

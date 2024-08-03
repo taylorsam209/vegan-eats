@@ -1,5 +1,5 @@
 import { Carousel } from 'nuka-carousel';
-import "./Landing.scss";
+import "./HomePage.scss";
 // import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 // import { getListings, getCurrentUser, clearListings } from '../../ducks/reducer';
@@ -13,7 +13,7 @@ import { useState } from 'react';
 import { TypeAnimation } from 'react-type-animation'
 // import axios from 'axios';
 
-export default function Landing() {
+export default function HomePage() {
   const [input, setInput] = useState('')
   // const [data, setData] = useState([{}])
   const photos = [freshveggie, mexicana, miso, pho]
@@ -65,8 +65,11 @@ export default function Landing() {
   // }
 
   return (
-    <div className="Landing">
+    <div className="home">
       <div className="video-container">
+        <video autoPlay muted loop>
+          <source src={hotpot} type="video/mp4" />.
+        </video>
         <div className="video-overlay">
           <div className="search-container">
             <input className="input-bar" type="text" value={input}
@@ -77,9 +80,6 @@ export default function Landing() {
           </div>
           {renderTypeWriter()}
         </div>
-        <video autoPlay muted loop>
-          <source src={hotpot} type="video/mp4" />.
-        </video>
       </div>
       <div className="bottom-container">
         <div className="about-container">

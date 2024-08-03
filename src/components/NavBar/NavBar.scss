@@ -4,11 +4,12 @@
     height: 60px;
     position: fixed;
     z-index: 20;
+    top:0;
 }
 
 .header-parent {
     color: $color-header;
-    border-top: solid 1px rgb(168, 168, 168);
+    border: solid 1px rgb(168, 168, 168);
     border-bottom: solid 1px rgb(168, 168, 168);
     background-color: $color-light;
     height: 60px;
